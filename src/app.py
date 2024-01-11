@@ -32,5 +32,8 @@ ax.set_xlabel('Salario')
 ax.set_ylabel('Nombre Completo')
 ax.set_title('Gráfica del salario de cada Empleado')
 
+if not on:
+    ax.set_yticklabels([])
+
 # Mostrar la gráfica en Streamlit
 st.pyplot(fig)
