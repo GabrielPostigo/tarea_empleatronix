@@ -1,5 +1,0 @@
-Librerias usadas:
-- Pandas
-- Numpy
-- Streamlit
-- Matplotlip
