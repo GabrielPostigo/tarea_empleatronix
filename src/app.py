@@ -25,7 +25,7 @@ with col3:
     on2 = st.toggle('Mostrar Sueldo en la barra')
 # Crear la gráfica de barras horizontales
 fig, ax = plt.subplots()
-bars = ax.barh(datos_set['full name'],datos_set['salary'], color = coloru)
+bars = ax.barh(datos_set['full name'],datos_set['salary'], color = coloru, width=20, height=12)
 
 # Etiquetas y título
 ax.set_xlabel('Salario')
