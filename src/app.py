@@ -13,6 +13,10 @@ st.write(datos_set) # mostramos el dataframe
 
 st.divider()    # es la linea separadora
 
+on = st.toggle('Activate feature')
+
+if on:
+    st.write('Feature activated!')
 
 # Crear la gráfica de barras horizontales
 fig, ax = plt.subplots()
