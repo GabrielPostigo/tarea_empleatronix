@@ -13,8 +13,6 @@ st.write(datos_set) # mostramos el dataframe
 
 st.divider()    # es la linea separadora
 
-# Configuración de la aplicación de Streamlit
-st.title('Gráfica de Barras Horizontales')
 
 # Crear la gráfica de barras horizontales
 fig, ax = plt.subplots()
