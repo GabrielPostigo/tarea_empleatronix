@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Sacar los datos del CSV
-datos_set = pd.read_csv("employees2.csv")
+datos_set = pd.read_csv("src/employees2.csv")
 
 # Ponemos el título
 st.title('EMPLEATRONIX')
