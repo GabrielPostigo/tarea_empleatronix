@@ -35,7 +35,13 @@ ax.set_title('Gráfica del salario de cada Empleado')
 if not on:
     ax.set_yticklabels([])
 
-fig.update_traces(texttemplate='%{text}', textposition='outside' if on2 else 'none')    # esto es para mostrar el valor de cada barra
+# Mostrar los valores junto a las barras si on2 está activado
+if on2:
+    for bar in bars:
+        width = bar.get_width()
+        label_x_pos = width if width >= 0 else width - 5  # Posición de la etiqueta
+        ax.text(label_x_pos, bar.get_y() + bar.get_height()/2, f'{width:.2f}', ha='left', va='center')
+
 
 # Mostrar la gráfica en Streamlit
 st.pyplot(fig)
