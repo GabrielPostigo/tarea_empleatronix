@@ -12,3 +12,18 @@ st.write('Todos los datos sobre los empleados en una aplicación.')
 st.write(datos_set) # mostramos el dataframe
 
 st.divider()    # es la linea separadora
+
+# Configuración de la aplicación de Streamlit
+st.title('Gráfica de Barras Horizontales')
+
+# Crear la gráfica de barras horizontales
+fig, ax = plt.subplots()
+ax.barh(datos_set['full name'],datos_set['salary'])
+
+# Etiquetas y título
+ax.set_xlabel('Salario')
+ax.set_ylabel('Nombre Completo')
+ax.set_title('Gráfica del salario de cada Empleado')
+
+# Mostrar la gráfica en Streamlit
+st.pyplot(fig)
