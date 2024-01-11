@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Sacar los datos del CSV
 datos_set = pd.read_csv("employees2.csv")
