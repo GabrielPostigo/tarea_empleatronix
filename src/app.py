@@ -13,11 +13,16 @@ st.write(datos_set) # mostramos el dataframe
 
 st.divider()    # es la linea separadora
 
-on = st.toggle('Activate feature')
+col1, col2, col3 = st.columns(3)    #creamos las columnas
 
-if on:
-    st.write('Feature activated!')
+with col1:
+    coloru = st.color_picker('Pick A Color', '#3475B3')
 
+with col2:
+    on = st.toggle('Mostrar el nombre')
+
+with col3:
+    on2 = st.toggle('Mostrar Sueldo en la barra')
 # Crear la gráfica de barras horizontales
 fig, ax = plt.subplots()
 ax.barh(datos_set['full name'],datos_set['salary'])
