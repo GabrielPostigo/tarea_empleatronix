@@ -24,13 +24,16 @@ with col2:
 with col3:
     on2 = st.toggle('Mostrar Sueldo en la barra')
 # Crear la gráfica de barras horizontales
-fig, ax = plt.subplots(figsize=(15, len(datos_set) * 0.5))
+fig, ax = plt.subplots(figsize=(10, len(datos_set) * 0.5))
 bars = ax.barh(datos_set['full name'],datos_set['salary'], color = coloru)
 
 # Etiquetas y título
 ax.set_xlabel('Salario')
 ax.set_ylabel('Nombre Completo')
-ax.set_title('Gráfica del salario de cada Empleado')
+# ax.set_title('Gráfica del salario de cada Empleado')
+
+# Ajustar el rango del eje X para que se extienda hasta 4500
+ax.set_xlim(right=4500)
 
 if not on:
     ax.set_yticklabels([])
