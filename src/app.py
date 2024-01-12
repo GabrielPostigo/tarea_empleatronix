@@ -48,3 +48,6 @@ if on2:
 
 # Mostrar la gráfica en Streamlit
 st.pyplot(fig)
+
+
+st.write("#### Realizado por Gabriel Postigo Rando - Tarea de Streamlit")
