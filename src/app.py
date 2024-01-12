@@ -50,4 +50,4 @@ if on2:
 st.pyplot(fig)
 
 
-st.write("#### Realizado por Gabriel Postigo Rando - Tarea de Streamlit")
+st.text("Realizado por Gabriel Postigo Rando - Tarea de Streamlit")
